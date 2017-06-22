@@ -3,7 +3,7 @@
    build:
      working_directory: ~/circleci2
      docker:
-       - image: circleci/opensdk:8
+       - image: circleci/openjdk:8
      steps:
        - checkout
        - run: echo "hello world"
