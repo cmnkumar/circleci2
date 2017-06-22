@@ -1,9 +1,0 @@
- version: 2
- jobs:
-   build:
-     working_directory: ~/circleci2
-     docker:
-       - image: circleci/opensdk:8
-     steps:
-       - checkout
-       - run: echo "hello world"
