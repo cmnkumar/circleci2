@@ -4,7 +4,7 @@
      working_directory: ~/circleci2
      docker:
        - image: circleci/openjdk:8
-        dependencies:
+     dependencies:
         override:
         - sudo pip install awscli
      steps:
