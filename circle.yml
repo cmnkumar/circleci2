@@ -9,5 +9,4 @@
         - sudo pip install awscli
      steps:
        - checkout
-       - run: echo "hello world 123"
-       - run: echco "S3 texting" > s3file.txt
+       - run: echo "S3 texting" > s3file.txt
