@@ -1,4 +1,4 @@
- version: 2
+ version: 3 
  jobs:
    build:
      working_directory: ~/circleci2
@@ -7,11 +7,6 @@
         dependencies:
         override:
         - sudo pip install awscli
-        deployment:
-        prod:
-        branch: master
-        commands:
-
      steps:
        - checkout
        - run: echo "hello world 123"
