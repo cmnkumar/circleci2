@@ -4,6 +4,15 @@
      working_directory: ~/circleci2
      docker:
        - image: circleci/openjdk:8
+        dependencies:
+        override:
+        - sudo pip install awscli
+        deployment:
+        prod:
+        branch: master
+        commands:
+
      steps:
        - checkout
        - run: echo "hello world 123"
+       - run: echco "S3 texting" > s3file.txt
