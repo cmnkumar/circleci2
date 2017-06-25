@@ -6,6 +6,7 @@
        - image: circleci/openjdk:8
      dependencies:
         pre:
+      - sudo apt-get install pip
         - sudo pip install awscli
      steps:
        - checkout
