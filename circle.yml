@@ -6,8 +6,8 @@
        - image: circleci/openjdk:8
      steps:
         - checkout
-        - run: echo "before pip install"
         - run:
           command: |
+            echo "before pip install"
             sudo pip install awscli  
-            echo " after pip install"     
+            echo "after pip install"     
