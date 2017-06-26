@@ -9,4 +9,3 @@
         - run:
           command: |
           sudo install pip      
-          sudo pip install awscli
