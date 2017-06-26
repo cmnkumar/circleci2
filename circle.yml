@@ -8,3 +8,6 @@
        - checkout
        - run: echo "S3 texting" > s3file.txt
        - run: echo "S3 texting again now"
+    dependencies:
+    override:
+        - sudo pip install awscli       
