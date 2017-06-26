@@ -10,4 +10,3 @@
           command: |
           sudo install pip      
           sudo pip install awscli
-          echo "hello world"  
