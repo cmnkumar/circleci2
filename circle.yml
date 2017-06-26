@@ -9,5 +9,5 @@
         - run: echo "before pip install"
         - run:
           command: |
-                 sudo pip install awscli  
-                 echo " after pip install"     
+            sudo pip install awscli  
+            echo " after pip install"     
