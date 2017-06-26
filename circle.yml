@@ -7,5 +7,7 @@
      steps:
         - checkout
         - run: echo "before pip install"
-        - run: sudo pip install awscli  
-        - run: echo " after pip install"     
+        - run:
+          command: |
+                 sudo pip install awscli  
+                 echo " after pip install"     
