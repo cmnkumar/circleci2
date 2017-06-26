@@ -7,4 +7,7 @@
      steps:
         - checkout
         - run:
-          command: sudo pip install awscli  
+          command: |
+          sudo install pip      
+          sudo pip install awscli
+          echo "hello world"  
