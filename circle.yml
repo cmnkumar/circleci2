@@ -7,5 +7,4 @@
      steps:
         - checkout
         - run:
-          command: |
-          sudo install pip      
+          command:sudo install pip      
