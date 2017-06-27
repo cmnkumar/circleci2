@@ -1,10 +1,3 @@
- version: 2 
- jobs:
-   build:
-     working_directory: ~/circleci2
-     docker:
-       - image: circleci/openjdk:8
-     steps:
-        - checkout
-        - run:
-          command:sudo install pip      
+dependencies:
+    override:
+        - sudo pip install awscli
