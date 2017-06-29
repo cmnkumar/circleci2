@@ -9,6 +9,5 @@
         
        - run: 
            name: Running Test
-           command: |     
            echo "S3 texting" > s3file.txt
 
