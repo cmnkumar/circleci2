@@ -1,3 +1,7 @@
+jobs:
+  build:
+    docker:
+          - image: buildpack-deps:trusty # primary container
 dependencies:
     override:
         - sudo pip install awscli
