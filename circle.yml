@@ -7,5 +7,5 @@
      steps:
        - checkout
        - run: echo "S3 texting" > s4file.txt
-       - run: sudo pip install awscli
+       - run: pip install awscli
 
