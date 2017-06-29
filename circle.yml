@@ -1,10 +1,10 @@
 jobs:
   build:
     docker:
-          - image: buildpack-deps:trusty # primary container
+           - image:Tomcat
+        #  - image: buildpack-deps:trusty # primary container
 dependencies:
     override:
-        - docker info
         - sudo pip install awscli
 test:
     override:
