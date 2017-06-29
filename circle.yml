@@ -6,8 +6,7 @@
        - image: tomcat 
      steps:
        - checkout
-        
-       - run: 
+        command:
            name: Running Test
            echo "S3 texting" > s3file.txt
 
