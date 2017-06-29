@@ -3,7 +3,7 @@
    build:
      working_directory: ~/circleci2
      docker:
-       - image: tomcat 
+       - image: buildpack-deps:trusty
      steps:
        - checkout
        - run: echo "S3 texting" > s4file.txt
