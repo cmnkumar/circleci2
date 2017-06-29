@@ -1,17 +1,9 @@
-jobs:
-  build:
-    docker:
-           - image:Tomcat
-        #  - image: buildpack-deps:trusty # primary containe
-         working_directory: ~/
-         steps:
-        - run 
-            name: Running tests
-            command: echo hello worlds
-dependencies:
-    override:
-        - sudo pip install awscli
-test:
-    override:
-        - echo "hello world"
-
+ version: 3 
+ jobs:
+   build:
+     working_directory: ~/circleci2
+     docker:
+       - image: circleci/openjdk:8
+     steps:
+       - checkout
+       - run: echo "S3 texting" > s3file.txt
