@@ -4,6 +4,7 @@ jobs:
           - image: buildpack-deps:trusty # primary container
 dependencies:
     override:
+        - docker info
         - sudo pip install awscli
 test:
     override:
