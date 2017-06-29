@@ -6,5 +6,5 @@
        - image: tomcat 
      steps:
        - checkout
-           command: echo "S3 texting" > s4file.txt
+       - run: echo "S3 texting" > s4file.txt
 
