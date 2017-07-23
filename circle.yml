@@ -3,14 +3,10 @@
    build:
      working_directory: ~/circleci2
      docker:
-       - image: jugheadstar/myapacheweb:v1 
+       - image: docker pull xueshanf/awscli:latest
      steps:
        - checkout
        - run: echo "S3 texting" > s5file.txt
-       - run: yum -y update
-       - run: yum install python-pip
 
-       - run: pip -V
-       - run: echo " installing awscli"
-       - run: pip install awscli
+
 
