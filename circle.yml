@@ -1,12 +1,8 @@
  version: 2 
- jobs:
-   build:
-     working_directory: ~/circleci2
-     docker:
-       - image: docker pull xueshanf/awscli
-     steps:
-       - checkout
-       - run: echo "S3 texting" > s6666665file.txt
-
-
-
+  override:
+        - sudo pip install awscli
+  deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync /home/ubuntu/Dockerfile s3://www.kloudadvantage.in
