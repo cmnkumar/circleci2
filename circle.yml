@@ -5,4 +5,4 @@
   prod:
     branch: master
     commands:
-      - aws s3 sync /home/ubuntu/Dockerfile s3://www.kloudadvantage.in
+      - aws s3 sync /home/ubuntu/Dockerfile s3://www.kloudadvantage.in --delete
