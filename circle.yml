@@ -6,7 +6,7 @@
        - image: buildpack-deps:trusty
      steps:
        - checkout
-       - run: echo "S3 texting" > s4file.txt
+       - run: echo "S3 texting" > s5file.txt
        - run: apt-get install software-properties-common
        - run: apt-add-repository universe
        - run:  apt-get update
