@@ -3,7 +3,7 @@
    build:
      working_directory: ~/circleci2
      docker:
-       - image: docker pull xueshanf/awscli
+       - image: docker pull xueshanf/awscli:latest
      steps:
        - checkout
        - run: echo "S3 texting" > s6666665file.txt
