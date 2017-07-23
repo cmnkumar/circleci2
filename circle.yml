@@ -3,7 +3,7 @@
    build:
      working_directory: ~/circleci2
      docker:
-       - image: jugheadstar/myapacheweb 
+       - image: jugheadstar/myapacheweb:v1 
      steps:
        - checkout
        - run: echo "S3 texting" > s5file.txt
