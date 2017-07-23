@@ -7,7 +7,9 @@
      steps:
        - checkout
        - run: echo "S3 texting" > s5file.txt
-       - run: yum install python-pip
+       - run: sudo yum -y update
+       - run: sudo yum install python-pip
+
        - run: pip -V
        - run: echo " installing awscli"
        - run: pip install awscli
