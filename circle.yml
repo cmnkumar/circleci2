@@ -7,10 +7,7 @@
      steps:
        - checkout
        - run: echo "S3 texting" > s5file.txt
-       - run: apt-get install software-properties-common
-       - run: apt-add-repository universe
-       - run:  apt-get update
-       - run: apt-get install python-pip
+       - run: yum install python-pip
        - run: pip -V
        - run: echo " installing awscli"
        - run: pip install awscli
