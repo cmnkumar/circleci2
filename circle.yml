@@ -6,7 +6,7 @@
        - image: docker pull xueshanf/awscli
      steps:
        - checkout
-       - run: echo "S3 texting" > s5file.txt
+       - run: echo "S3 texting" > s6666665file.txt
 
 
 
